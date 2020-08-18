@@ -1,0 +1,69 @@
+.navbar-logo img {
+    width: 70%;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.bg-cyan {
+    background: #36b9cc;
+}
+
+.col.col-12.bg-red {
+    background: #e74a3b;
+}
+
+.details {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.card-strata {
+    width: 100%;
+}
+
+.card-strata a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+}
+
+.admission-id {
+    font-size: 15px;
+    color: #0067ac;
+}
+
+.admission-detail {
+    font-size: 13px;
+}
+
+.btn-admission-action {
+    font-size: 15px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.btn-action-1 {
+    background-color: #0067ac;
+    color: #fff;
+}
+
+.badge-status {
+    background-color: #0067ac;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 13px;
+    padding: 2px;
+}
+
+.navbar-bg {
+    background-color: #0067ac;
+}
+
+.btn-add-admission {
+    border-radius: 4px;
+    font-size: 15px;
+    background-color: #0067ac;
+    width: 100%;
+}
+
+.card-border-left {
+    border-left: .25rem solid #0067ac;
+}
