@@ -84,3 +84,7 @@ label{
 .text-radio label{
     font-size: 15px;
 }
+
+.tab-content{
+    width: 100%;
+}

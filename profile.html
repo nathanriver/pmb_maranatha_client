@@ -145,8 +145,9 @@
                             <li class="nav-item dropdown no-arrow" role="presentation">
                                 <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link"
                                         data-toggle="dropdown" aria-expanded="false" href="#"><span
-                                            class="d-none d-lg-inline mr-2 text-gray-600 small">Rintarou Okabe</span><img
-                                            class="border rounded-circle img-profile" src="assets/img/avatar2.jpg"></a>
+                                            class="d-none d-lg-inline mr-2 text-gray-600 small">Rintarou
+                                            Okabe</span><img class="border rounded-circle img-profile"
+                                            src="assets/img/avatar2.jpg"></a>
                                     <div class="dropdown-menu shadow dropdown-menu-right animated--grow-in" role="menu">
                                         <a class="dropdown-item" role="presentation" href="#"><i
                                                 class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Profile</a><a
@@ -177,109 +178,235 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="card shadow">
-                                        <div class="card-header py-3">
-                                            <p class="text-primary m-0 font-weight-bold">Data Diri Calon Mahasiswa</p>
-                                        </div>
-                                        <div class="card-body">
-                                            <form>
-                                                <div class="form-group">
-                                                    <label for="fullname"><strong>Nama Lengkap</strong></label>
-                                                    <input class="form-control" type="text" name="fullname">
-                                                </div>
 
-                                                <div class="form-group">
-                                                    <label for="gender"><strong>Jenis Kelamin</strong></label>
-                                                    <br>
-                                                    <div class="form-check form-check-inline text-radio">
-                                                        <input class="form-check-input" type="radio"
-                                                            name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
-                                                        <label class="form-check-label" for="inlineRadio1">Laki
-                                                            -laki</label>
-                                                    </div>
-                                                    <div class="form-check form-check-inline text-radio">
-                                                        <input class="form-check-input" type="radio"
-                                                            name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                                        <label class="form-check-label"
-                                                            for="inlineRadio2">Perempuan</label>
-                                                    </div>
-                                                </div>
+                        <!-- TAB -->
+                        <div class="container-fluid">
+                            <ul id="rowTab" class="nav nav-tabs justify-content-center">
+                                <li class="nav-item active">
+                                    <a class="nav-link active" href="#data_diri" data-toggle="tab">Data Diri</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#data_orangtua" data-toggle="tab">Data Orang Tua</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#data_sekolah" data-toggle="tab">Data Sekolah</a>
+                                </li>
+                            </ul>
+                        </div>
 
-                                                <div class="form-group">
-                                                    <label for="birthdate"><strong>Tanggal Lahir</strong></label>
-                                                    <div class="input-group">
-                                                        <input type="text" class="form-control" id="datepicker">
-                                                    </div>
+                        <!-- DATA DIRI CALON MAHASISWA -->
+                        <div class="tab-content">
+                            <div id="data_diri" class="tab-pane active">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="card shadow">
+                                                <div class="card-header py-3">
+                                                    <p class="text-primary m-0 font-weight-bold">Data Diri Calon
+                                                        Mahasiswa</p>
                                                 </div>
+                                                <div class="card-body">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <label for="fullname"><strong>Nama Lengkap</strong></label>
+                                                            <input class="form-control" type="text" name="fullname">
+                                                        </div>
 
-                                                <div class="form-group">
-                                                    <label for="birthplace"><strong>Tempat Lahir</strong></label>
-                                                    <input class="form-control" type="text" name="fullname">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="phone"><strong>No Handphone</strong></label>
-                                                    <input class="form-control" type="text" name="fullname">
-                                                </div>
+                                                        <div class="form-group">
+                                                            <label for="gender"><strong>Jenis Kelamin</strong></label>
+                                                            <br>
+                                                            <div class="form-check form-check-inline text-radio">
+                                                                <input class="form-check-input" type="radio"
+                                                                    name="inlineRadioOptions" id="inlineRadio1"
+                                                                    value="option1" checked>
+                                                                <label class="form-check-label" for="inlineRadio1">Laki
+                                                                    -laki</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline text-radio">
+                                                                <input class="form-check-input" type="radio"
+                                                                    name="inlineRadioOptions" id="inlineRadio2"
+                                                                    value="option2">
+                                                                <label class="form-check-label"
+                                                                    for="inlineRadio2">Perempuan</label>
+                                                            </div>
+                                                        </div>
 
-                                                <div class="form-group">
-                                                    <label for="religion"><strong>Agama</strong></label>
-                                                    <label for="exampleFormControlSelect1">Example select</label>
-                                                    <select class="form-control" id="exampleFormControlSelect1">
-                                                        <option>-- - --</option>
-                                                        <option>Islam</option>
-                                                        <option>Kristen</option>
-                                                        <option>Katolik</option>
-                                                        <option>Hindu</option>
-                                                        <option>Buddha</option>
-                                                        <option>Kong Hu Cu</option>
-                                                        <option>Lainnya</option>
-                                                    </select>
-                                                </div>
+                                                        <div class="form-group">
+                                                            <label for="birthdate"><strong>Tanggal
+                                                                    Lahir</strong></label>
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control" id="datepicker">
+                                                            </div>
+                                                        </div>
 
-                                                <div class="form-group">
-                                                    <label for="citizenship"><strong>Warga Negara</strong></label>
-                                                    <br>
-                                                    <div class="form-check form-check-inline text-radio">
-                                                        <input class="form-check-input" type="radio"
-                                                            name="inlineRadioOptions2" id="inlineRadio1" value="option1" checked>
-                                                        <label class="form-check-label" for="inlineRadio1">WNI</label>
-                                                    </div>
-                                                    <div class="form-check form-check-inline text-radio">
-                                                        <input class="form-check-input" type="radio"
-                                                            name="inlineRadioOptions2" id="inlineRadio2" value="option2">
-                                                        <label class="form-check-label" for="inlineRadio2">WNA</label>
-                                                    </div>
-                                                </div>
+                                                        <div class="form-group">
+                                                            <label for="birthplace"><strong>Tempat
+                                                                    Lahir</strong></label>
+                                                            <input class="form-control" type="text" name="fullname">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="phone"><strong>No Handphone</strong></label>
+                                                            <input class="form-control" type="text" name="fullname">
+                                                        </div>
 
-                                                <div class="form-group">
-                                                    <label for="religion"><strong>Provinsi</strong></label>
-                                                    <select class="form-control" id="exampleFormControlSelect1">
-                                                        <option>JAWA BARAT</option>
-                                                        <option>JAWA TENGAH</option>
-                                                        <option>JAWA TIMUR</option>
-                                                    </select>
-                                                </div>
+                                                        <div class="form-group">
+                                                            <label for="religion"><strong>Agama</strong></label>
+                                                            <label for="exampleFormControlSelect1">Example
+                                                                select</label>
+                                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                                <option>-- - --</option>
+                                                                <option>Islam</option>
+                                                                <option>Kristen</option>
+                                                                <option>Katolik</option>
+                                                                <option>Hindu</option>
+                                                                <option>Buddha</option>
+                                                                <option>Kong Hu Cu</option>
+                                                                <option>Lainnya</option>
+                                                            </select>
+                                                        </div>
 
-                                                <div class="form-group">
-                                                    <label for="city"><strong>Kota</strong></label>
-                                                    <input class="form-control" type="text" name="fullname">
-                                                </div>
+                                                        <div class="form-group">
+                                                            <label for="citizenship"><strong>Warga
+                                                                    Negara</strong></label>
+                                                            <br>
+                                                            <div class="form-check form-check-inline text-radio">
+                                                                <input class="form-check-input" type="radio"
+                                                                    name="inlineRadioOptions2" id="inlineRadio1"
+                                                                    value="option1" checked>
+                                                                <label class="form-check-label"
+                                                                    for="inlineRadio1">WNI</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline text-radio">
+                                                                <input class="form-check-input" type="radio"
+                                                                    name="inlineRadioOptions2" id="inlineRadio2"
+                                                                    value="option2">
+                                                                <label class="form-check-label"
+                                                                    for="inlineRadio2">WNA</label>
+                                                            </div>
+                                                        </div>
 
-                                                <div class="form-group"><button class="btn btn-primary btn-sm"
-                                                        type="submit">Save&nbsp;Profile</button></div>
-                                            </form>
+                                                        <div class="form-group">
+                                                            <label for="religion"><strong>Provinsi</strong></label>
+                                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                                <option>JAWA BARAT</option>
+                                                                <option>JAWA TENGAH</option>
+                                                                <option>JAWA TIMUR</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="city"><strong>Kota</strong></label>
+                                                            <input class="form-control" type="text" name="fullname">
+                                                        </div>
+
+                                                        <div class="form-group"><button class="btn btn-primary btn-sm"
+                                                                type="submit">Simpan</button></div>
+                                                    </form>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- DATA ORANG TUA -->
+                            <div id="data_orangtua" class="tab-pane fade">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="card shadow">
+                                                <div class="card-header py-3">
+                                                    <p class="text-primary m-0 font-weight-bold">Data Orang Tua</p>
+                                                </div>
+                                                <div class="card-body">
+                                                    <form>
+
+                                                        <div class="form-group">
+                                                            <label for="religion"><strong>Penanngung
+                                                                    Jawab</strong></label>
+                                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                                <option>Ayah</option>
+                                                                <option>Ibu</option>
+                                                                <option>Wali</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="fullname"><strong>Nama Orang
+                                                                    Tua</strong></label>
+                                                            <input class="form-control" type="text" name="fullname">
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="fullname"><strong>Nama Asli Ibu
+                                                                    Kandung</strong></label>
+                                                            <input class="form-control" type="text" name="fullname">
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="fullname"><strong>No. Handphone Orang
+                                                                    Tua</strong></label>
+                                                            <input class="form-control" type="text" name="fullname">
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="fullname"><strong>Email Orang
+                                                                    Tua</strong></label>
+                                                            <input class="form-control" type="text" name="fullname">
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="fullname"><strong>No Telepon Orang
+                                                                    Tua</strong></label>
+                                                            <input class="form-control" type="text" name="fullname">
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="religion"><strong>Provinsi</strong></label>
+                                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                                <option>JAWA BARAT</option>
+                                                                <option>JAWA TENGAH</option>
+                                                                <option>JAWA TIMUR</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="religion"><strong>Kota</strong></label>
+                                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                                <option>KABUPATEN BANDUNG</option>
+                                                                <option>KABUPATEN BANDUNG BARAT</option>
+                                                                <option>KOTA BANDUNG</option>
+                                                            </select>
+                                                        </div>
+
+
+                                                        <div class="form-group"><button class="btn btn-primary btn-sm"
+                                                                type="submit">Simpan</button></div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="data_sekolah" class="tab-pane fade">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe sequi quam libero fuga sunt tempora 
+                                harum labore sapiente esse, quod error perferendis neque rerum ipsa quidem explicabo ipsam quae officiis, 
+                                iste adipisci perspiciatis iusto, consectetur beatae quibusdam. 
+                                Molestiae ex reiciendis facilis vel iste odit quasi, quis nesciunt tempora, nihil possimus.
+                            </div>
                         </div>
+
+
                     </div>
 
                 </div>
             </div>
+
+
+
+
             <footer class="bg-white sticky-footer">
                 <div class="container my-auto">
                     <div class="text-center my-auto copyright"><span>Copyright © MCU 2020</span></div>
@@ -305,6 +432,12 @@
             });
         });
     </script>
+
+    <!-- <script type="text/javascript">
+        $(document).ready(function () {
+            $('#rowTab a:first').tab('show');
+        });    
+    </script> -->
 
 
 </body>
