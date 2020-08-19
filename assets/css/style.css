@@ -27,7 +27,7 @@
 
 .admission-id {
     font-size: 15px;
-    color: #0067ac;
+    /* color: #0067ac; */
 }
 
 .admission-detail {
@@ -41,8 +41,16 @@
 }
 
 .btn-action-1 {
-    background-color: #0067ac;
-    color: #fff;
+    /* background-color: #0067ac; */
+    background: transparent;
+    color: #0067ac;
+    /* color: #fff; */
+    border-color: #0067ac;
+}
+
+.btn-action-2 {
+    color: #e74a3b;
+    border-color: #e74a3b;
 }
 
 .badge-status {
@@ -66,4 +74,9 @@
 
 .card-border-left {
     border-left: .25rem solid #0067ac;
+}
+
+label{
+    font-size: 12px;
+    margin-bottom: 0;
 }
