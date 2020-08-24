@@ -100,9 +100,17 @@ label {
 }
 
 .bg-strata-1 {
-    background-color: #36b9cc;
+    background-color: #0067ac;
 }
 
 .bg-strata-2 {
-    background-color: #e74a3b;
+    background-color: #00a2e2;
+}
+
+.bg-jalur-1 {
+    background-color: #0067ac;
+}
+
+.bg-jalur-2 {
+    background-color: #00a2e2;
 }
