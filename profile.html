@@ -41,7 +41,7 @@
                     <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3"
                             id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
                         <ul class="nav navbar-nav flex-nowrap ml-auto">
-                            
+
                             <li class="nav-item dropdown no-arrow" role="presentation">
                                 <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link"
                                         data-toggle="dropdown" aria-expanded="false" href="#"><span
@@ -52,7 +52,8 @@
                                         <a class="dropdown-item" role="presentation" href="profile.html"><i
                                                 class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Profile</a><a
                                             class="dropdown-item" role="presentation" href="#"><i
-                                                class="fas fa-key fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Ubah Password</a>
+                                                class="fas fa-key fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Ubah
+                                            Password</a>
                                         <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation"
                                             href="#"><i
                                                 class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Logout</a>
@@ -70,7 +71,7 @@
                                 <div class="card-body text-center shadow"><img class="rounded-circle mb-3 mt-4"
                                         src="assets/img/avatar2.jpg" width="160" height="160">
                                     <div class="mb-3">
-                                        <button class="btn btn-primary btn-sm" type="button">Ganti Foto</button>
+                                        <button class="btn btn-bg-blue btn-sm" type="button">Ganti Foto</button>
                                     </div>
                                 </div>
                             </div>
@@ -196,7 +197,7 @@
                                                             <input class="form-control" type="text" name="fullname">
                                                         </div>
 
-                                                        <div class="form-group"><button class="btn btn-primary btn-sm"
+                                                        <div class="form-group"><button class="btn btn-bg-blue btn-sm"
                                                                 type="submit">Simpan</button></div>
                                                     </form>
                                                 </div>
@@ -277,7 +278,7 @@
                                                         </div>
 
 
-                                                        <div class="form-group"><button class="btn btn-primary btn-sm"
+                                                        <div class="form-group"><button class="btn btn-bg-blue btn-sm"
                                                                 type="submit">Simpan</button></div>
                                                     </form>
                                                 </div>
@@ -288,13 +289,94 @@
                             </div>
 
                             <div id="data_sekolah" class="tab-pane fade">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe sequi quam libero fuga
-                                sunt tempora
-                                harum labore sapiente esse, quod error perferendis neque rerum ipsa quidem explicabo
-                                ipsam quae officiis,
-                                iste adipisci perspiciatis iusto, consectetur beatae quibusdam.
-                                Molestiae ex reiciendis facilis vel iste odit quasi, quis nesciunt tempora, nihil
-                                possimus.
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="card shadow">
+                                                <div class="card-header py-3">
+                                                    <p class="text-primary m-0 font-weight-bold">Data Sekolah</p>
+                                                </div>
+                                                <div class="card-body">
+                                                    <form>
+
+                                                        <div class="form-group">
+                                                            <label for="high_school"><strong>Asal
+                                                                    Sekolah</strong></label>
+                                                            <select class="form-control mb-3"
+                                                                id="exampleFormControlSelect1">
+                                                                <option value="" selected disabled hidden>Pilih Provinsi
+                                                                </option>
+                                                                <option>JAWA BARAT</option>
+                                                                <option>BANTEN</option>
+                                                                <option>DKI JAKARTA</option>
+                                                            </select>
+
+                                                            <select class="form-control mb-3"
+                                                                id="exampleFormControlSelect1">
+                                                                <option value="" selected disabled hidden>Pilih
+                                                                    Kota/Kabupaten
+                                                                </option>
+                                                                <option>KOTA BANDUNG</option>
+                                                                <option>KOTA JAKARTA SELATAN</option>
+                                                                <option>CILEGON</option>
+                                                            </select>
+
+                                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                                <option value="" selected disabled>Pilih Sekolah
+                                                                </option>
+                                                                <option>SMAN 1</option>
+                                                                <option>SMAN 2</option>
+                                                                <option>SMAN 3</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="religion"><strong>Jurusan</strong></label>
+                                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                                <option>IPA</option>
+                                                                <option>BAHASA</option>
+                                                                <option>KEJURUAN (SMK)</option>
+                                                                <option>Lainnya</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="religion"><strong>Kota</strong></label>
+                                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                                <option>KABUPATEN BANDUNG</option>
+                                                                <option>KABUPATEN BANDUNG BARAT</option>
+                                                                <option>KOTA BANDUNG</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="kelulusan"><strong>Tahun
+                                                                    Kelulusan</strong></label>
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control"
+                                                                    id="datepicker2">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck1">
+                                                                <label class="form-check-label" for="defaultCheck1">
+                                                                    Saya Pernah Kuliah
+                                                                </label>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="form-group"><button class="btn btn-bg-blue btn-sm"
+                                                                type="submit">Simpan</button></div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -329,6 +411,18 @@
                 format: 'dd-mm-yyyy',
                 autoclose: true,
                 todayHighlight: true,
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#datepicker2').datepicker({
+                format: 'yyyy',
+                autoclose: true,
+                todayHighlight: true,
+                viewMode: 'years',
+                minViewMode: 'years'
             });
         });
     </script>

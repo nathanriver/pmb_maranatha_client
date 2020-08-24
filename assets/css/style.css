@@ -76,15 +76,25 @@
     border-left: .25rem solid #0067ac;
 }
 
-label{
+label {
     font-size: 12px;
     margin-bottom: 0;
 }
 
-.text-radio label{
+.text-radio label {
     font-size: 15px;
 }
 
-.tab-content{
+.tab-content {
     width: 100%;
+}
+
+.form-check label {
+    font-size: 15px;
+}
+
+.btn-bg-blue{
+    color: #fff;
+    background-color: #0067ac;
+    border-color: #0067ac;
 }
