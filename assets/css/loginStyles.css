@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-bs {
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.bg-gradient {
+    background-color: #0067ac;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: #fff;
+}
+
+.background {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container-card-login-form {
+    margin-top: 60px;
+}
+
+.form-title {
+    font-size: 22px;
+    font-weight: 500;
+    color: #0067ac;
+}
+
+.card-login-form {
+    padding: 20px;
+    width: 85%;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 4px;
+}
+
+.col-info {
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.info-description {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.container-img {
+    position: relative;
+}
+
+.col-info img {
+    border-radius: 4px;
+    width: 100%;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2)
+}
+
+.btn-info {
+    width: 60px;
+    border: 0px;
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    background: #fff;
+    color: #0067ac;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.btn-info a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+}
+
+.btn-info:hover {
+    color: #fff;
+    background: #0067ac;
+}
+
+.col-form {
+    padding: 20px;
+}
+
+label {
+    font-size: 12px;
+    color: #919191;
+}
+
+.container-col-form {
+    margin: auto;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.col-form a {
+    font-size: 12px;
+    color: gray;
+    font-weight: 500;
+}
+
+.btn-login {
+    font-size: 12px;
+    font-weight: 500;
+    background: #0067ac;
+}
+
+.hr-white {
+    border: 1px solid white;
+}
+
+.footer {
+    color: #fff;
+    position: absolute;
+    font-weight: normal;
+    bottom: 0;
+    background: #00a3e3;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 13px;
+}
+
+@media (max-width: 420px) {
+    .footer {
+        position: relative;
+    }
+}

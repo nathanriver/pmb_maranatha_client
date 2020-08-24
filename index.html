@@ -4,233 +4,75 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Dashboard - MCU</title>
+    <title>pmb_maranatha_login</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans"> -->
+    <link rel="stylesheet" href="assets/css/loginStyles.css">
 </head>
 
-<body id="page-top">
-    <div id="wrapper">
-        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion p-0 navbar-bg">
-            <div class="container-fluid d-flex flex-column p-0">
-                <a class="" href="#">
-                    <div class="navbar-logo"><img src="assets/img/logo_maranatha_white.png"></div>
+<body class="bg-gradient">
+    <div class="background">
+
+        <!-- NAVBAR -->
+        <nav class="navbar sticky-top navbar-bs">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/logo_maranatha.png" width="150" alt="">
                 </a>
-                <hr class="sidebar-divider my-0">
-                <ul class="nav navbar-nav text-light" id="accordionSidebar">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html"><i
-                                class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="profile.html"><i
-                                class="fas fa-user"></i><span>Data Diri</span></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="daftar_baru.html"><i
-                                class="fas fa-user-plus"></i><span>Daftar Baru</span></a></li>
-                </ul>
-                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0"
-                        id="sidebarToggle" type="button"></button></div>
             </div>
         </nav>
-        <div class="d-flex flex-column" id="content-wrapper">
-            <div id="content">
-                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
-                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3"
-                            id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
-                        <ul class="nav navbar-nav flex-nowrap ml-auto">
 
-                            <li class="nav-item dropdown no-arrow" role="presentation">
-                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link"
-                                        data-toggle="dropdown" aria-expanded="false" href="#"><span
-                                            class="d-none d-lg-inline mr-2 text-gray-600 small">Rintarou
-                                            Okabe</span><img class="border rounded-circle img-profile"
-                                            src="assets/img/avatar2.jpg"></a>
-                                    <div class="dropdown-menu shadow dropdown-menu-right animated--grow-in" role="menu">
-                                        <a class="dropdown-item" role="presentation" href="profile.html"><i
-                                                class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Profile</a><a
-                                            class="dropdown-item" role="presentation" href="#"><i
-                                                class="fas fa-key fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Ubah
-                                            Password</a>
-                                        <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation"
-                                            href="#"><i
-                                                class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Logout</a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-                <div class="container-fluid">
-                    <div class="d-sm-flex justify-content-between align-items-center mb-4">
-                        <h3 class="text-dark mb-0">Daftar Pendaftaran</h3>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 col-xl-2">
-                            <a class="btn btn-primary btn-add-admission" role="button" href="daftar_baru.html">
-                                <i class="fas fa-plus-circle fa-sm text-white-50"></i>&nbsp;Daftar Baru</a>
+        <!-- CONTENT -->
+        <div class="container-fluid padding container-card-login-form">
+            <div class="container">
+                <div class="row padding">
+                    <div class="col-xs-12 col-sm-6 col-info">
+                        <div class="info-description">
+                            Informasi lengkap mengenai Penerimaan Mahasiswa Baru dapat dilihat di bawah
+                            ini.
+                        </div>
+                        <div class="container-img">
+                            <img class="mb-2" src="assets/img/banner_pmb.jpg" alt="">
+                            <button class="btn btn-primary btn-info btn-sm">INFO</button>
                         </div>
                     </div>
-
-                    <!-- ADMISSION CARD -->
-                    <div class="row mb-2">
-                        <div class="col-12">
-                            <div class="card shadow card-border-left py-2">
-                                <div class="card-body">
-                                    <div class="row align-items-center no-gutters">
-                                        <div class="col">
-                                            <label for="">No Peserta</label>
-                                            <div class="text-dark font-weight-bold mb-1 ">
-                                                2020010830
-                                            </div>
-
-                                            <label for="">Periode</label>
-                                            <div class=" text-dark font-weight-bold mb-1 admission-id">
-                                                <div><b>UTBK 20/21</b>, Tahun Akademik 2020/2021</div>
-                                            </div>
-
-                                            <label for="">Status</label>
-                                            <div class="text-dark font-weight-bold mb-1">
-                                                <div><span class=" badge-status">Silahkan memilih program
-                                                        studi.</span> </div>
-                                            </div>
-
-                                            <label for="">Tanggal Daftar</label>
-                                            <div class="text-dark font-weight-bold mb-1">
-                                                <i class="fa fa-calendar"></i> &nbsp; Jumat, 14 Agustus 2020,
-                                                16:37:36
-                                            </div>
-
-                                            <div class="row justify-content-between mt-2 px-2">
-                                                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-3 col-xl-2 p-1">
-                                                    <button class="btn btn-action-1 btn-admission-action">
-                                                        Pilih Program Studi
-                                                    </button>
-                                                </div>
-
-                                                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-3 col-xl-2 p-1">
-                                                    <button class="btn btn-action-2 btn-admission-action mr-0">
-                                                        Batalkan Pendaftaran
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="col-xs-12 col-sm-6 col-form">
+                        <div class="container-col-form">
+                            <div class="text-center">
+                                <p class="form-title">DAFTAR ONLINE</p>
+                            </div>
+                            <hr>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password">
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-primary btn-block btn-login" onclick="location.href='dashboard.html'">LOGIN</button>
+                            </div>
+                            <hr>
+                            <div class="text-center">
+                                <a href="">FORGOT PASSWORD</a>
+                                <br>
+                                <a href="">REGISTER</a>
                             </div>
                         </div>
                     </div>
-
-                    <div class="row mb-2">
-                        <div class="col-12">
-                            <div class="card shadow card-border-left py-2">
-                                <div class="card-body">
-                                    <div class="row align-items-center no-gutters">
-                                        <div class="col">
-                                            <label for="">No Peserta</label>
-                                            <div class="text-dark font-weight-bold mb-1 ">
-                                                2020010830
-                                            </div>
-
-                                            <label for="">Periode</label>
-                                            <div class=" text-dark font-weight-bold mb-1 admission-id">
-                                                <div><b>UTBK 20/21</b>, Tahun Akademik 2020/2021</div>
-                                            </div>
-
-                                            <label for="">Status</label>
-                                            <div class="text-dark font-weight-bold mb-1">
-                                                <div><span class=" badge-status">Silahkan memilih program
-                                                        studi.</span> </div>
-                                            </div>
-
-                                            <label for="">Tanggal Daftar</label>
-                                            <div class="text-dark font-weight-bold mb-1">
-                                                <i class="fa fa-calendar"></i> &nbsp; Jumat, 14 Agustus 2020,
-                                                16:37:36
-                                            </div>
-
-                                            <div class="row justify-content-between mt-2 px-2">
-                                                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-3 col-xl-2 p-1">
-                                                    <button class="btn btn-action-1 btn-admission-action">
-                                                        Pilih Program Studi
-                                                    </button>
-                                                </div>
-
-                                                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-3 col-xl-2 p-1">
-                                                    <button class="btn btn-action-2 btn-admission-action mr-0">
-                                                        Batalkan Pendaftaran
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row mb-2">
-                        <div class="col-12">
-                            <div class="card shadow card-border-left py-2">
-                                <div class="card-body">
-                                    <div class="row align-items-center no-gutters">
-                                        <div class="col">
-                                            <label for="">No Peserta</label>
-                                            <div class="text-dark font-weight-bold mb-1 ">
-                                                2020010830
-                                            </div>
-
-                                            <label for="">Periode</label>
-                                            <div class=" text-dark font-weight-bold mb-1 admission-id">
-                                                <div><b>UTBK 20/21</b>, Tahun Akademik 2020/2021</div>
-                                            </div>
-
-                                            <label for="">Status</label>
-                                            <div class="text-dark font-weight-bold mb-1">
-                                                <div><span class=" badge-status">Silahkan memilih program
-                                                        studi.</span> </div>
-                                            </div>
-
-                                            <label for="">Tanggal Daftar</label>
-                                            <div class="text-dark font-weight-bold mb-1">
-                                                <i class="fa fa-calendar"></i> &nbsp; Jumat, 14 Agustus 2020,
-                                                16:37:36
-                                            </div>
-
-                                            <div class="row justify-content-between mt-2 px-2">
-                                                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-3 col-xl-2 p-1">
-                                                    <button class="btn btn-action-1 btn-admission-action">
-                                                        Pilih Program Studi
-                                                    </button>
-                                                </div>
-
-                                                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-3 col-xl-2 p-1">
-                                                    <button class="btn btn-action-2 btn-admission-action mr-0">
-                                                        Batalkan Pendaftaran
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
                 </div>
             </div>
-            <footer class="bg-white sticky-footer">
-                <div class="container my-auto">
-                    <div class="text-center my-auto copyright"><span>Copyright © MCU 2020</span></div>
-                </div>
-            </footer>
-        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        </div>
     </div>
 
-    <script src="assets/js/jquery.min.js"></script>
+    <footer class="footer text-center">
+        <div class="container">
+            © 2020 Universitas Kristen Maranatha
+        </div>
+    </footer>
+
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/chart.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
-    <script src="assets/js/theme.js"></script>
 
 </body>
 
