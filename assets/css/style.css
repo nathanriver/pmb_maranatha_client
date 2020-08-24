@@ -93,8 +93,16 @@ label {
     font-size: 15px;
 }
 
-.btn-bg-blue{
+.btn-bg-blue {
     color: #fff;
     background-color: #0067ac;
     border-color: #0067ac;
+}
+
+.bg-strata-1 {
+    background-color: #36b9cc;
+}
+
+.bg-strata-2 {
+    background-color: #e74a3b;
 }
