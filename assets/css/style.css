@@ -4,9 +4,7 @@
     margin-left: 15px;
 }
 
-.bg-cyan {
-    background: #36b9cc;
-}
+
 
 .col.col-12.bg-red {
     background: #e74a3b;
@@ -54,10 +52,10 @@
 }
 
 .badge-status {
-    background-color: #0067ac;
+    /* background-color: #0067ac; */
     border-radius: 4px;
-    color: #fff;
-    font-size: 13px;
+    color: #0067ac;
+    /* font-size: 13px; */
     padding: 2px;
 }
 
@@ -81,6 +79,11 @@ label {
     margin-bottom: 0;
 }
 
+.label-adm{
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
 .text-radio label {
     font-size: 15px;
 }
@@ -100,17 +103,27 @@ label {
 }
 
 .bg-strata-1 {
-    background-color: #0067ac;
+    background-color: #2ab4c0;
 }
 
 .bg-strata-2 {
-    background-color: #00a2e2;
+    background-color: #f2784b;
 }
 
 .bg-jalur-1 {
-    background-color: #0067ac;
+    background-color: #1BBC9B;
 }
 
 .bg-jalur-2 {
-    background-color: #00a2e2;
+    background-color: #3faba4;
+}
+
+.bg-cyan {
+    background-color: #36b9cc;
+}
+
+.btn-blue{
+    background: #fff;
+    color: #0067ac;
+    border-color: #0067ac;
 }
