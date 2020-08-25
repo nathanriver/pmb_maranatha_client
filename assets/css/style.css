@@ -1,7 +1,11 @@
+.navbar-logo {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
 .navbar-logo img {
-    width: 70%;
-    margin-top: 10px;
-    margin-left: 15px;
+    width: 60%;
 }
 
 .col.col-12.bg-red {
@@ -126,8 +130,8 @@ label {
     border-color: #0067ac;
 }
 
-
 /* PROFILE NAV TABS */
+
 .nav-tabs {
     overflow-x: auto;
     overflow-y: hidden;
