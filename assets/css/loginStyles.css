@@ -45,6 +45,16 @@ body {
     font-size: 22px;
     font-weight: 500;
     color: #0067ac;
+    margin-bottom: 0;
+}
+
+.form-text{
+    font-size: 15px;
+}
+
+.form-link{
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .card-login-form {
@@ -121,7 +131,7 @@ label {
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
 }
 
-.col-form a {
+.col-form .text-forgot-pass a {
     font-size: 12px;
     color: gray;
     font-weight: 500;
