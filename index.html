@@ -31,8 +31,19 @@
                             Informasi lengkap mengenai Penerimaan Mahasiswa Baru dapat dilihat di bawah
                             ini.
                         </div>
-                        <div class="container-img">
-                            <img class="mb-2" src="assets/img/banner_pmb.jpg" alt="">
+                        <div id="bannerCarousel" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#bannerCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#bannerCarousel" data-slide-to="1"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="assets/img/banner_pmb.jpg" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="assets/img/banner_pmb2.jpg" alt="Second slide">
+                                </div>
+                            </div>
                             <a class="btn btn-info btn-sm" href="http://www.maranatha.edu/admission/">INFO</a>
                         </div>
                     </div>
@@ -73,7 +84,14 @@
         </div>
     </footer>
 
+    <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $('.carousel').carousel({
+            interval: 5000
+        });
+    </script>
 
 </body>
 

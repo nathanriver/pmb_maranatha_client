@@ -74,7 +74,10 @@ body {
 .col-info img {
     border-radius: 4px;
     width: 100%;
-    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2)
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+}
+#bannerCarousel{
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
 }
 
 .btn-info {
