@@ -13,9 +13,7 @@ body {
     margin: 0;
 }
 
-.navbar-bs {
-    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
-}
+/* BODY */
 
 .bg-gradient {
     background-color: #0067ac;
@@ -24,20 +22,19 @@ body {
     background-size: cover;
 }
 
+/* NAVBAR */
+
+.navbar-bs {
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
 .navbar {
     background-color: #fff;
 }
 
-.background {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-}
+/* CONTENT */
 
-.container-card-login-form {
+.container-card {
     margin-top: 60px;
 }
 
@@ -49,11 +46,11 @@ body {
     margin-bottom: 0;
 }
 
-.form-text{
+.form-text {
     font-size: 15px;
 }
 
-.form-link{
+.form-link {
     font-size: 15px;
     font-weight: 500;
     color: #0067ac;
@@ -88,7 +85,8 @@ body {
     width: 100%;
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
 }
-#bannerCarousel{
+
+#bannerCarousel {
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -149,6 +147,8 @@ label {
     border: 1px solid white;
 }
 
+/* FOOTER */
+
 .footer {
     color: #fff;
     position: absolute;
@@ -161,7 +161,7 @@ label {
     font-size: 13px;
 }
 
-@media (max-width: 575px) and (max-height: 1000px), (max-height: 647px){
+@media (max-width: 575px) and (max-height: 1000px), (max-height: 647px) {
     .footer {
         position: relative;
     }
