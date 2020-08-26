@@ -146,8 +146,14 @@ label {
     font-size: 13px;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 575px) and (max-height: 1000px){
     .footer {
         position: relative;
     }
 }
+
+/* @media (max-height: 420px) {
+    .footer {
+        position: relative;
+    }
+} */
