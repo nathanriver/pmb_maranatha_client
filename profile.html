@@ -167,8 +167,7 @@
 
                                                         <div class="form-group">
                                                             <label for="religion"><strong>Agama</strong></label>
-                                                            <label for="exampleFormControlSelect1">Example
-                                                                select</label>
+
                                                             <select class="form-control" id="exampleFormControlSelect1">
                                                                 <option>-- - --</option>
                                                                 <option>Islam</option>
@@ -187,18 +186,34 @@
                                                             <br>
                                                             <div class="form-check form-check-inline text-radio">
                                                                 <input class="form-check-input" type="radio"
-                                                                    name="inlineRadioOptions2" id="inlineRadio1"
-                                                                    value="option1" checked>
+                                                                    name="wargaNegaraRadio" id="wniRadio"
+                                                                    value="optionWni" checked>
                                                                 <label class="form-check-label"
-                                                                    for="inlineRadio1">WNI</label>
+                                                                    for="wniRadio">WNI</label>
                                                             </div>
                                                             <div class="form-check form-check-inline text-radio">
                                                                 <input class="form-check-input" type="radio"
-                                                                    name="inlineRadioOptions2" id="inlineRadio2"
-                                                                    value="option2">
+                                                                    name="wargaNegaraRadio" id="wnaRadio"
+                                                                    value="optionWna">
                                                                 <label class="form-check-label"
-                                                                    for="inlineRadio2">WNA</label>
+                                                                    for="wnaRadio">WNA</label>
                                                             </div>
+                                                        </div>
+
+                                                        <div id="input-kewarganegaraan" class="form-group hidden">
+                                                            <label for="kewarganegaraan">
+                                                                <strong>Kewarganegaraan</strong>
+                                                            </label>
+                                                            <input class="form-control" type="text" id="kewarganegaraan"
+                                                                name="kewarganegaraan">
+                                                        </div>
+
+                                                        <div id="input-no-paspor" class="form-group hidden">
+                                                            <label for="noPaspor">
+                                                                <strong>Nomor Paspor</strong>
+                                                            </label>
+                                                            <input class="form-control" type="text" id="noPaspor"
+                                                                name="noPaspor">
                                                         </div>
 
                                                         <div class="form-group">
@@ -235,12 +250,12 @@
                                                     <form>
 
                                                         <div class="form-group">
-                                                            <label for="religion"><strong>Penanngung
+                                                            <label for="guardianSelect"><strong>Penanngung
                                                                     Jawab</strong></label>
-                                                            <select class="form-control" id="exampleFormControlSelect1">
-                                                                <option>Ayah</option>
-                                                                <option>Ibu</option>
-                                                                <option>Wali</option>
+                                                            <select class="form-control" id="guardianSelect">
+                                                                <option value="ayah">Ayah</option>
+                                                                <option value="ibu">Ibu</option>
+                                                                <option value="wali">Wali</option>
                                                             </select>
                                                         </div>
 
@@ -254,6 +269,14 @@
                                                             <label for="fullname"><strong>Nama Asli Ibu
                                                                     Kandung</strong></label>
                                                             <input class="form-control" type="text" name="fullname">
+                                                        </div>
+
+                                                        <div id="input-guardian" class="form-group hidden">
+                                                            <label for="guardian">
+                                                                <strong>Nama Wali</strong>
+                                                            </label>
+                                                            <input class="form-control" id="guardian" type="text"
+                                                                name="guardian">
                                                         </div>
 
                                                         <div class="form-group">
@@ -272,6 +295,16 @@
                                                             <label for="fullname"><strong>No Telepon Orang
                                                                     Tua</strong></label>
                                                             <input class="form-control" type="text" name="fullname">
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck1">
+                                                                <label class="form-check-label" for="defaultCheck1">
+                                                                    Saya tinggal bersama orang tua
+                                                                </label>
+                                                            </div>
                                                         </div>
 
                                                         <div class="form-group">
@@ -430,6 +463,17 @@
                 minViewMode: 'years'
             });
         });
+    </script>
+    <script>
+        // $('input[type="radio"]').click(function () {
+        //     var inputValue = $(this).attr("value");
+        //     if (inputValue == "optionWna") {
+        //         $('.hidden').toggleClass("hidden");
+        //     } else {
+        //         // $('.hidden').collapse('hide');
+        //         $('.hidden').toggleClass("hidden");
+        //     }
+        // });
     </script>
 
     <!-- <script type="text/javascript">

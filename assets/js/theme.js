@@ -10,6 +10,35 @@
     };
   });
 
+  //  Radio Kewarganegaraan
+  $('input[type="radio"]').click(function () {
+    var inputValue = $(this).attr("value");
+    if ($(this).attr('id') == 'wnaRadio') {
+      if ($('#input-kewarganegaraan').hasClass('hidden')) {
+        $('#input-kewarganegaraan').toggleClass('hidden');
+        $('#input-no-paspor').toggleClass('hidden');
+      }
+    } else if ($(this).attr('id') == 'wniRadio') {
+      if (!$('#input-kewarganegaraan').hasClass('hidden')) {
+        $('#input-kewarganegaraan').toggleClass('hidden');
+        $('#input-no-paspor').toggleClass('hidden');
+      }
+    }
+  });
+
+  // Wali Option
+  $("#guardianSelect").change(function () {
+    if ($(this).val() == 'wali') {
+      if ($('#input-guardian').hasClass('hidden')) {
+        $('#input-guardian').toggleClass('hidden');
+      }
+    } else {
+      if (!$('#input-guardian').hasClass('hidden')) {
+        $('#input-guardian').toggleClass('hidden');
+      }
+    }
+  });
+
   //  Auto Collapse
   // Close any open menu accordions when window is resized below 768px
   $(window).resize(function () {
@@ -53,5 +82,7 @@
     }, 1000, 'easeInOutExpo');
     e.preventDefault();
   });
+
+
 
 })(jQuery); // End of use strict

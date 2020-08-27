@@ -197,6 +197,10 @@ label {
     color: #fff;
 }
 
+.hidden{
+    display: none;
+}
+
 @media (max-width: 444px) {
     .nav-tabs {
         display: -webkit-box;
