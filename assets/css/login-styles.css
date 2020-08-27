@@ -34,6 +34,18 @@ body {
 
 /* CONTENT */
 
+.btn-bg-blue {
+    color: #fff;
+    background-color: #0067ac;
+    border-color: #0067ac;
+}
+
+.btn-bg-blue:hover {
+    color: #fff;
+    background-color: #003d7c;
+    border-color: #003d7c;
+}
+
 .container-card {
     margin-top: 60px;
 }
@@ -90,7 +102,7 @@ body {
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
 }
 
-.btn-info {
+.btn-informasi {
     width: 60px;
     border: 0px;
     position: absolute;
@@ -103,11 +115,11 @@ body {
     padding: 5px;
 }
 
-.btn-info a:hover, a:visited, a:link, a:active {
+.btn-informasi a:hover, a:visited, a:link, a:active {
     text-decoration: none;
 }
 
-.btn-info:hover {
+.btn-informasi:hover {
     color: #fff;
     background: #0067ac;
 }
@@ -141,6 +153,7 @@ label {
     font-size: 12px;
     font-weight: 500;
     background: #0067ac;
+    border-radius: 4px;
 }
 
 .hr-white {
