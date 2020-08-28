@@ -12,7 +12,12 @@
 
   // Toggle Prodi pilihan 2
   $("#btn-pilihan-2").click(function () {
-    $("#prodi-pilihan-2").toggleClass("hidden");
+    $("#prodi-pilihan-2").toggleClass('hidden');
+    if ($("#prodi-pilihan-2").hasClass("hidden")) {
+      $("#btn-pilihan-2").text('Tambah Pilihan 2');
+    } else {
+      $("#btn-pilihan-2").text('Tutup Pilihan 2');
+    }
   });
 
   //  Radio Kewarganegaraan
