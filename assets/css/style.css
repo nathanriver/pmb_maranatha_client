@@ -197,8 +197,14 @@ label {
     color: #fff;
 }
 
-.hidden{
+.hidden {
     display: none;
+}
+
+/* PRODI */
+
+#btn-pilihan-2:not([href]) {
+    color: #fff;
 }
 
 @media (max-width: 444px) {

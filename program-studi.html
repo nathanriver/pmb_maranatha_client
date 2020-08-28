@@ -93,28 +93,53 @@
                             <div class="card shadow">
                                 <div class="card-body">
                                     <!-- <form> -->
-                                    <div class="form-group">
-                                        <label for="religion"><strong>Program Studi Pilihan 1</strong></label>
-                                        <select class="form-control" id="exampleFormControlSelect1">
-                                            <option>Program Studi S-1 Pendidikan Dokter</option>
-                                            <option>Program Studi S-1 Desain Komunikasi Visual</option>
-                                            <option>Program Studi S-1 Teknik Informatika</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="religion"><strong>Sumbangan Sukarela 1</strong></label>
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text" id="basic-addon1">Rp</span>
-                                            </div>
-                                            <input type="text" class="form-control" aria-describedby="basic-addon1">
+                                    <div>
+                                        <div class="form-group">
+                                            <label for="religion"><strong>Program Studi Pilihan 1</strong></label>
+                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                <option>Program Studi S-1 Pendidikan Dokter</option>
+                                                <option>Program Studi S-1 Desain Komunikasi Visual</option>
+                                                <option>Program Studi S-1 Teknik Informatika</option>
+                                            </select>
                                         </div>
-                                        <label for=""><i>(Berlaku kelipatan Rp 5000000)</i></label>
+
+                                        <div class="form-group">
+                                            <label for="religion"><strong>Sumbangan Sukarela 1</strong></label>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="basic-addon1">Rp</span>
+                                                </div>
+                                                <input type="text" class="form-control" aria-describedby="basic-addon1">
+                                            </div>
+                                            <label for=""><i>(Berlaku kelipatan Rp 5000000)</i></label>
+                                        </div>
                                     </div>
 
-                                    <div class="col-12 text-center">
-                                        <a class="btn btn-secondary btn-sm" href="">Tambah Pilihan 2</a>
+                                    <div class="col-12 text-center mb-3">
+                                        <a id="btn-pilihan-2" class="btn btn-secondary btn-sm">
+                                            Tambah Pilihan 2</a>
+                                    </div>
+
+                                    <div id="prodi-pilihan-2" class="hidden">
+                                        <div class="form-group">
+                                            <label for="religion"><strong>Program Studi Pilihan 2</strong></label>
+                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                <option>Program Studi S-1 Pendidikan Dokter</option>
+                                                <option>Program Studi S-1 Desain Komunikasi Visual</option>
+                                                <option>Program Studi S-1 Teknik Informatika</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="religion"><strong>Sumbangan Sukarela 2</strong></label>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="basic-addon1">Rp</span>
+                                                </div>
+                                                <input type="text" class="form-control" aria-describedby="basic-addon1">
+                                            </div>
+                                            <label for=""><i>(Berlaku kelipatan Rp 5000000)</i></label>
+                                        </div>
                                     </div>
                                     <!-- </form> -->
                                 </div>
@@ -125,7 +150,8 @@
                     <div class="row mt-3">
                         <div class="col-12">
                             <div class="form-group">
-                                <button class="btn btn-bg-blue btn-sm" onclick="location.href='nilai.html'">Submit</button>
+                                <button class="btn btn-bg-blue btn-sm"
+                                    onclick="location.href='nilai.html'">Submit</button>
                             </div>
                         </div>
                     </div>

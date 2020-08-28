@@ -10,6 +10,11 @@
     };
   });
 
+  // Toggle Prodi pilihan 2
+  $("#btn-pilihan-2").click(function () {
+    $("#prodi-pilihan-2").toggleClass("hidden");
+  });
+
   //  Radio Kewarganegaraan
   $('input[type="radio"]').click(function () {
     var inputValue = $(this).attr("value");
