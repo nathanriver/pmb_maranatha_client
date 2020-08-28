@@ -39,6 +39,34 @@
     }
   });
 
+  // Option Agama
+  $("#religionSelect").change(function () {
+    if ($(this).val() == 'kristen' || $(this).val() == 'katolik') {
+      if ($('#input-asal-gereja').hasClass('hidden')) {
+        $('#input-asal-gereja').toggleClass('hidden');
+      }
+    } else {
+      if (!$('#input-asal-gereja').hasClass('hidden')) {
+        $('#input-asal-gereja').toggleClass('hidden');
+      }
+    }
+  });
+
+  // CB Pernah Kuliah
+  $("#cbPernahKuliah").change(function () {
+    if ($(this).is(':checked')) {
+      if ($('#input-asal-universitas').hasClass('hidden')) {
+        $('#input-asal-universitas').toggleClass('hidden');
+        $('#dp-tahun-kuliah').toggleClass('hidden');
+      }
+    } else {
+      if (!$('#input-asal-universitas').hasClass('hidden')) {
+        $('#input-asal-universitas').toggleClass('hidden');
+        $('#dp-tahun-kuliah').toggleClass('hidden');
+      }
+    }
+  });
+
   //  Auto Collapse
   //  Close any open menu accordions when window is resized below 768px
   $(window).resize(function () {

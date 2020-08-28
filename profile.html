@@ -168,16 +168,24 @@
                                                         <div class="form-group">
                                                             <label for="religion"><strong>Agama</strong></label>
 
-                                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                            <select class="form-control" id="religionSelect">
                                                                 <option>-- - --</option>
-                                                                <option>Islam</option>
-                                                                <option>Kristen</option>
-                                                                <option>Katolik</option>
-                                                                <option>Hindu</option>
-                                                                <option>Buddha</option>
-                                                                <option>Kong Hu Cu</option>
-                                                                <option>Lainnya</option>
+                                                                <option value="islam">Islam</option>
+                                                                <option value="kristen">Kristen</option>
+                                                                <option value="katolik">Katolik</option>
+                                                                <option value="hindu">Hindu</option>
+                                                                <option value="buddha">Buddha</option>
+                                                                <option value="konghucu">Kong Hu Cu</option>
+                                                                <option value="lainnya">Lainnya</option>
                                                             </select>
+                                                        </div>
+
+                                                        <div id="input-asal-gereja" class="form-group hidden">
+                                                            <label for="asalGereja">
+                                                                <strong>Asal Gereja</strong>
+                                                            </label>
+                                                            <input class="form-control" type="text" id="asalGereja"
+                                                                name="asalGereja">
                                                         </div>
 
                                                         <div class="form-group">
@@ -406,16 +414,34 @@
                                                         <div class="form-group">
                                                             <div class="form-check">
                                                                 <input class="form-check-input" type="checkbox" value=""
-                                                                    id="defaultCheck1">
-                                                                <label class="form-check-label" for="defaultCheck1">
+                                                                    id="cbPernahKuliah">
+                                                                <label class="form-check-label" for="cbPernahKuliah">
                                                                     Saya Pernah Kuliah
                                                                 </label>
                                                             </div>
                                                         </div>
 
+                                                        <div id="input-asal-universitas" class="form-group hidden">
+                                                            <label for="asalUniversitas">
+                                                                <strong>Asal Universitas</strong>
+                                                            </label>
+                                                            <input class="form-control" id="asalUniversitas" type="text"
+                                                                name="asalUniversitas">
+                                                        </div>
 
-                                                        <div class="form-group"><button class="btn btn-bg-blue btn-sm"
-                                                                type="submit">Simpan</button></div>
+                                                        <div id="dp-tahun-kuliah" class="form-group hidden">
+                                                            <label for="tahunKuliah"><strong>Tahun
+                                                                    Kuliah</strong></label>
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control"
+                                                                    id="datepicker-tahun-kuliah">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <button class="btn btn-bg-blue btn-sm"
+                                                                type="submit">Simpan</button>
+                                                        </div>
                                                     </form>
                                                 </div>
                                             </div>
@@ -439,8 +465,6 @@
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <!-- <script src="assets/js/chart.min.js"></script> -->
-    <!-- <script src="assets/js/bs-init.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/bootstrap-datepicker.js"></script>
@@ -455,7 +479,7 @@
     </script>
     <script type="text/javascript">
         $(function () {
-            $('#datepicker2').datepicker({
+            $('#datepicker2, #datepicker-tahun-kuliah').datepicker({
                 format: 'yyyy',
                 autoclose: true,
                 todayHighlight: true,
@@ -464,23 +488,6 @@
             });
         });
     </script>
-    <script>
-        // $('input[type="radio"]').click(function () {
-        //     var inputValue = $(this).attr("value");
-        //     if (inputValue == "optionWna") {
-        //         $('.hidden').toggleClass("hidden");
-        //     } else {
-        //         // $('.hidden').collapse('hide');
-        //         $('.hidden').toggleClass("hidden");
-        //     }
-        // });
-    </script>
-
-    <!-- <script type="text/javascript">
-        $(document).ready(function () {
-            $('#rowTab a:first').tab('show');
-        });    
-    </script> -->
 
 </body>
 
