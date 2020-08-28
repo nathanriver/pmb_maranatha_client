@@ -26,7 +26,7 @@
     }
   });
 
-  // Wali Option
+  // Option Wali
   $("#guardianSelect").change(function () {
     if ($(this).val() == 'wali') {
       if ($('#input-guardian').hasClass('hidden')) {
@@ -40,7 +40,7 @@
   });
 
   //  Auto Collapse
-  // Close any open menu accordions when window is resized below 768px
+  //  Close any open menu accordions when window is resized below 768px
   $(window).resize(function () {
     if ($(window).width() < 768) {
       if (!$(".sidebar").hasClass("toggled")) {
