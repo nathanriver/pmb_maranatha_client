@@ -125,7 +125,8 @@
                                                     <form>
                                                         <div class="form-group">
                                                             <label for="fullname"><strong>Nama Lengkap</strong></label>
-                                                            <input class="form-control" type="text" name="fullname">
+                                                            <input class="form-control" type="text" name="fullname" 
+                                                            placeholder="Nama sesuai dengan akta kelahiran">
                                                         </div>
 
                                                         <div class="form-group">
@@ -147,6 +148,14 @@
                                                             </div>
                                                         </div>
 
+
+                                                        <div class="form-group">
+                                                            <label for="birthplace"><strong>Tempat
+                                                                    Lahir</strong></label>
+                                                            <input class="form-control" type="text" name="fullname" 
+                                                            placeholder="Tempat lahir sesuai dengan akta kelahiran">
+                                                        </div>
+
                                                         <div class="form-group">
                                                             <label for="birthdate"><strong>Tanggal
                                                                     Lahir</strong></label>
@@ -155,11 +164,6 @@
                                                             </div>
                                                         </div>
 
-                                                        <div class="form-group">
-                                                            <label for="birthplace"><strong>Tempat
-                                                                    Lahir</strong></label>
-                                                            <input class="form-control" type="text" name="fullname">
-                                                        </div>
                                                         <div class="form-group">
                                                             <label for="phone"><strong>No Handphone</strong></label>
                                                             <input class="form-control" type="text" name="fullname">
@@ -258,7 +262,7 @@
                                                     <form>
 
                                                         <div class="form-group">
-                                                            <label for="guardianSelect"><strong>Penanngung
+                                                            <label for="guardianSelect"><strong>Penanggung
                                                                     Jawab</strong></label>
                                                             <select class="form-control" id="guardianSelect">
                                                                 <option value="ayah">Ayah</option>
@@ -284,6 +288,14 @@
                                                                 <strong>Nama Wali</strong>
                                                             </label>
                                                             <input class="form-control" id="guardian" type="text"
+                                                                name="guardian">
+                                                        </div>
+
+                                                        <div id="input-guardian-relation" class="form-group hidden">
+                                                            <label for="guardian-relation">
+                                                                <strong>Hubungan Wali dengan Calon Mahasiswa</strong>
+                                                            </label>
+                                                            <input class="form-control" id="guardian-relation" type="text"
                                                                 name="guardian">
                                                         </div>
 
@@ -330,6 +342,17 @@
                                                                 <option>KABUPATEN BANDUNG</option>
                                                                 <option>KABUPATEN BANDUNG BARAT</option>
                                                                 <option>KOTA BANDUNG</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="religion">
+                                                                <strong>Pekerjaan Orang Tua</strong>
+                                                            </label>
+                                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                                <option>Pegawai Negeri</option>
+                                                                <option>Pegawai Swasta</option>
+                                                                <option>Wiraswasta</option>
                                                             </select>
                                                         </div>
 
@@ -390,15 +413,6 @@
                                                                 <option>BAHASA</option>
                                                                 <option>KEJURUAN (SMK)</option>
                                                                 <option>Lainnya</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <label for="religion"><strong>Kota</strong></label>
-                                                            <select class="form-control" id="exampleFormControlSelect1">
-                                                                <option>KABUPATEN BANDUNG</option>
-                                                                <option>KABUPATEN BANDUNG BARAT</option>
-                                                                <option>KOTA BANDUNG</option>
                                                             </select>
                                                         </div>
 

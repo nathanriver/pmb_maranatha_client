@@ -49,6 +49,18 @@
     }
   });
 
+  $("#guardianSelect").change(function () {
+    if ($(this).val() == 'wali') {
+      if ($('#input-guardian-relation').hasClass('hidden')) {
+        $('#input-guardian-relation').toggleClass('hidden');
+      }
+    } else {
+      if (!$('#input-guardian-relation').hasClass('hidden')) {
+        $('#input-guardian-relation').toggleClass('hidden');
+      }
+    }
+  });
+
   // Option Agama
   $("#religionSelect").change(function () {
     if ($(this).val() == 'kristen' || $(this).val() == 'katolik') {
