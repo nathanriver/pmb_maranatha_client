@@ -160,6 +160,21 @@ label {
     border: 1px solid white;
 }
 
+/* OVERLAY */
+.overlay {
+    position: absolute;
+    border-radius: 4px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    /* opacity: 20%; */
+    transition: .5s ease;
+    background-color: rgba(0,0,0,0.2);
+  }
+
 /* FOOTER */
 
 .footer {
