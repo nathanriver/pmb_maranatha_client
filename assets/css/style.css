@@ -75,6 +75,7 @@
 
 .navbar-bg {
     background-color: #0067ac;
+    background: linear-gradient(180deg, #0067ac 0%, #00a3e3 100%);
 }
 
 .btn-add-admission {
