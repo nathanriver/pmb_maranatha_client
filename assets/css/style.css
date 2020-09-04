@@ -26,6 +26,11 @@
     text-decoration: none;
 }
 
+/* DROPDOWN ITEM ACTIVE */
+.dropdown-item.active, .dropdown-item:active{
+    background-color: #0067ac;
+}
+
 /* HR HEADLINE */
 
 .headline {
