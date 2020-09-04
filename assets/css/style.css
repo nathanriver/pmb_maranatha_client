@@ -19,6 +19,7 @@
 
 .card-strata {
     width: 100%;
+    min-height: 140px;
 }
 
 .card-strata a:hover, a:visited, a:link, a:active {
