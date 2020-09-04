@@ -26,14 +26,15 @@
 }
 
 /* HR HEADLINE */
-.headline{
-    font-weight: 300;
+
+.headline {
+    font-weight: 700;
     display: inline-block;
     padding-bottom: 5px;
     position: relative;
 }
 
-.headline:before{
+.headline:before {
     content: "";
     position: absolute;
     width: 30%;
@@ -44,11 +45,12 @@
 }
 
 /* ADMISSION CARD */
-.card-over{
+
+.card-over {
     overflow: auto;
 }
 
-.admission-card-item{
+.admission-card-item {
     max-width: 300px;
     min-height: 300px;
     min-width: 300px;
@@ -155,7 +157,19 @@ label {
     font-size: 15px;
 }
 
+/* FORM INPUT */
+.form-control:focus{
+    background-color: #fff;
+    border: 2px solid #00a3e3;
+    border-radius: 4px;
+    outline: 0;
+    /* box-shadow: 0 0 0 0.2rem rgba(78,115,223,.25); */
+    box-shadow: none;
+}
+
 .btn-bg-blue {
+    font-size: 13px;
+    font-weight: 700;
     color: #fff;
     background-color: #0067ac;
     border-color: #0067ac;
@@ -201,10 +215,16 @@ label {
     flex-wrap: nowrap;
 }
 
+#rowTab .nav-item:hover{
+    background-color: #fff;
+    border-radius: 4px;
+}
+
 .nav-tabs .nav-link {
-    color: #858796;
+    color: #5a5c69;
     white-space: nowrap;
-    font-weight: 500;
+    font-weight: 700;
+    font-size: 13px;
 }
 
 .nav-tabs .nav-item {
@@ -213,9 +233,10 @@ label {
 
 .nav-tabs .nav-link.active {
     color: #858796;
+    color: #0067ac;
     background-color: transparent;
     border-color: transparent;
-    border-bottom: 2px solid #0067ac;
+    /* border-bottom: 2px solid #0067ac; */
 }
 
 .text-black {
@@ -241,27 +262,32 @@ label {
 /* PRODI */
 
 /* SCROLL */
+
 /* width */
+
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #0067ac; 
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #0067ac;
     border-radius: 4px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #00a3e3; 
-  }
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00a3e3;
+}
 
 #btn-pilihan-2:not([href]) {
     color: #fff;
