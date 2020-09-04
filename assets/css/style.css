@@ -25,6 +25,24 @@
     text-decoration: none;
 }
 
+/* HR HEADLINE */
+.headline{
+    font-weight: 300;
+    display: inline-block;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.headline:before{
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 1px;
+    bottom: 0;
+    left: 35%;
+    border-bottom: 3px solid #0067ac;
+}
+
 /* ADMISSION CARD */
 .card-over{
     overflow: auto;
@@ -37,6 +55,7 @@
     margin-right: 20px;
     margin-bottom: 10px;
     border-radius: 4px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
 }
 
 .admission-id {
