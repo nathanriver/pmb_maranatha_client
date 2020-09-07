@@ -27,7 +27,8 @@
 }
 
 /* DROPDOWN ITEM ACTIVE */
-.dropdown-item.active, .dropdown-item:active{
+
+.dropdown-item.active, .dropdown-item:active {
     background-color: #0067ac;
 }
 
@@ -51,8 +52,13 @@
 }
 
 /* FONT 13 */
-.font-size-13{
+
+.font-size-13 {
     font-size: 13px;
+}
+
+.font-size-14 {
+    font-size: 14px;
 }
 
 /* ADMISSION CARD */
@@ -169,7 +175,8 @@ label {
 }
 
 /* FORM INPUT */
-.form-control:focus{
+
+.form-control:focus {
     background-color: #fff;
     border: 2px solid #00a3e3;
     border-radius: 4px;
@@ -227,7 +234,7 @@ label {
     flex-wrap: nowrap;
 }
 
-#rowTab .nav-item:hover{
+#rowTab .nav-item:hover {
     background-color: #fff;
     border-radius: 4px;
 }
@@ -299,6 +306,13 @@ label {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #00a3e3;
+}
+
+/* TABLE HOVER */
+
+.table-hover tbody tr:hover {
+    color: #000;
+    background-color: rgba(0, 103, 172, .1);
 }
 
 #btn-pilihan-2:not([href]) {
