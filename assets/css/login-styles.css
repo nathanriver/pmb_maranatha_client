@@ -172,38 +172,40 @@ label {
 }
 
 .btn-action-white {
-    color: #0067ac;
+    color: #fff;
     font-size: 12px;
     font-weight: 700;
-    background-color: #fff;
-    border-color: #fff;
+    background-color: #00a3e3;
+    border-color: #00a3e3;
     border-radius: 4px;
 }
 
 .btn-action-white:hover {
-    color: #0067ac;
-    background-color: #ccc;
-    border-color: #ccc;
+    color: #fff;
+    background-color: #0074b1;
+    border-color: #0074b1;
 }
 
 .btn-action-danger {
-    color: #e74a3b;
+    color: #fff;
     font-size: 12px;
     font-weight: 700;
-    background-color: #fff;
-    border-color: #fff;
+    background-color: #e74a3b;
+    border-color: #e74a3b;
     border-radius: 4px;
 }
 
 .btn-action-danger:hover {
-    color: #e74a3b;
-    background-color: #ccc;
-    border-color: #ccc;
+    color: #fff;
+    background-color: #ae0612;
+    border-color: #ae0612;
 }
 
-.btn-responsive{
+.btn-responsive {
     width: 100%;
     /* max-width: 200px; */
+    font-size: 13px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
 }
 
 .hr-white {
@@ -276,11 +278,15 @@ label {
 
 /* PERSONAL DATA */
 .container-personal-data{
-    max-width: 1000px;
+    max-width: 600px;
 }
 
 .form-check label {
     font-size: 15px;
+}
+
+.hidden{
+    display: none;
 }
 
 @media (max-width: 575px) and (max-height: 1000px), (max-height: 647px) {
