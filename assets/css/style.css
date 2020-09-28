@@ -119,6 +119,43 @@
     border-color: #e74a3b;
 }
 
+.btn-action-white {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: #0067ac;
+    border-color: #0067ac;
+    border-radius: 4px;
+}
+
+.btn-action-white:hover {
+    color: #fff;
+    background-color: #003d7c;
+    border-color: #003d7c;
+}
+
+.btn-action-danger {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: #e74a3b;
+    border-color: #e74a3b;
+    border-radius: 4px;
+}
+
+.btn-action-danger:hover {
+    color: #fff;
+    background-color: #ae0612;
+    border-color: #ae0612;
+}
+
+.btn-responsive {
+    width: 100%;
+    /* max-width: 200px; */
+    font-size: 13px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
 .badge-status {
     /* background-color: #0067ac; */
     border-radius: 4px;
@@ -270,6 +307,10 @@ label {
     color: red;
 }
 
+.fa-check {
+    color: green;
+}
+
 .btn-bg-blue .fa-plus {
     color: #fff;
 }
@@ -329,6 +370,11 @@ label {
 .profile-nav .nav-link:hover{
     border-color: transparent;
     color: #0067ac;
+}
+
+/* NOT ALLOWED LINK */
+.not-allowed{
+    cursor: not-allowed;
 }
 
 @media (max-width: 444px) {

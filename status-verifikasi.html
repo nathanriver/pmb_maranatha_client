@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Profile - MCU</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- DATEPICKER -->
+    <link rel="stylesheet" href="assets/css/bootstrap-datepicker.css">
+
+<body id="page-top" data-spy="scroll" data-target="#profileNav" data-offset="1">
+    <div id="wrapper">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion p-0 navbar-bg">
+            <div class="container-fluid d-flex flex-column p-0">
+                <a class="" href="dashboard.html">
+                    <div class="navbar-logo">
+                        <img src="assets/img/logo_maranatha_white.png">
+                    </div>
+                </a>
+                <div class="col-12">
+                    <hr class="sidebar-divider my-0">
+                </div>
+                <ul class="nav navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" href="dashboard.html">
+                            <i class="fas fa-fw fa-tachometer-alt"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" href="profile.html">
+                            <i class="fas fa-fw fa-id-card"></i>
+                            <span>Data Diri</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" href="daftar-baru.html">
+                            <i class="fas fa-fw fa-user-plus"></i>
+                            <span>Daftar Baru</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="col-12">
+                    <hr class="sidebar-divider">
+                </div>
+                <div class="text-center d-none d-md-inline">
+                    <button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button>
+                </div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper" style="overflow-x: unset;">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                    <div class="container-fluid">
+                        <button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <ul class="nav navbar-nav flex-nowrap ml-auto">
+                            <li class="nav-item dropdown no-arrow" role="presentation">
+                                <div class="nav-item dropdown no-arrow">
+                                    <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false"
+                                        href="#">
+                                        <span class="d-none d-lg-inline mr-2 text-gray-600 small">
+                                            Rintarou Okabe</span>
+                                        <img class="border rounded-circle img-profile" src="assets/img/avatar2.jpg">
+                                    </a>
+                                    <div class="dropdown-menu shadow dropdown-menu-right animated--grow-in" role="menu">
+                                        <a class="dropdown-item" role="presentation" href="profile.html">
+                                            <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Profile
+                                        </a>
+                                        <a class="dropdown-item" role="presentation" href="ubah-password.html">
+                                            <i class="fas fa-key fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Ubah Password
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" role="presentation" href="index.html">
+                                            <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                            &nbsp;Logout
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="container-fluid">
+                    <h4 class="text-dark mb-4 headline">VERIFIKASI AKUN</h4>
+                    <div class="row mb-3">
+                        <div class="col-12 mb-3 p-0">
+                            <div class="col-12 mb-3">
+                                <div class="text-center">
+                                    Silahkan cek inbox/spam email dan HP Anda untuk kode verifikasi.
+                                    Klik tombol Kirim ulang jika kode tidak terkirim.
+                                </div>
+                            </div>
+
+                            <div class="col m-auto" style="max-width: 400px">
+                                <div class="card mb-3">
+                                    <div class="card-body text-center shadow">
+                                        <div class="container text-dark">
+                                            <div class="mt-4 mb-4">
+                                                <h5 class="font-weight-bold">1. VERIFIKASI EMAIL</h5>
+                                                <h6>Rintarou Okabe</h6>
+                                                <h6 class="badge badge-success">
+                                                    <i class="fas fa-fw fa-check" style="color: white"></i>Terverifikasi
+                                                </h6>
+
+                                                <!-- <h6 class="badge badge-danger">
+                                                    <i class="fas fa-fw fa-times" style="color: white"></i>Belum
+                                                    Terverifikasi
+                                                </h6> -->
+
+                                                <div class="form-group text-center">
+                                                    <a class="btn btn-blue btn-sm" type="submit" href="#">KIRIM
+                                                        ULANG</a>
+                                                </div>
+                                            </div>
+
+                                            <hr>
+
+                                            <div class="mb-4">
+                                                <h5 class="font-weight-bold">2. VERIFIKASI NO HP</h5>
+                                                <h6>087774886969</h6>
+                                                <h6 class="badge badge-danger">
+                                                    <i class="fas fa-fw fa-times" style="color: white"></i>Belum
+                                                    Terverifikasi
+                                                </h6>
+
+
+                                                <div class="form-group">
+                                                    <label for="phone_verification">
+                                                        <strong>Kode Verifikasi</strong>
+                                                    </label>
+                                                    <input class="form-control" type="text" name="phone_verification"
+                                                        placeholder="Masukkan kode verifikasi">
+                                                </div>
+
+                                                <div class="form-group text-center">
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-sm-6 mb-3">
+                                                            <a class="btn btn-blue btn-sm" type="submit" href="#"
+                                                                style="width: 100%">
+                                                                KIRIM ULANG</a>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-6">
+                                                            <a class="btn btn-bg-blue btn-sm" href="#" type="submit"
+                                                                style="width: 100%">SUBMIT</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- FOOTER -->
+            <footer class="bg-white sticky-footer">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"><span>Copyright © MCU 2020</span></div>
+                </div>
+            </footer>
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#datepicker').datepicker({
+                format: 'dd-mm-yyyy',
+                autoclose: true,
+                todayHighlight: true,
+                maxViewMode: 'years'
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('#datepicker2, #datepicker-tahun-kuliah').datepicker({
+                format: 'yyyy',
+                autoclose: true,
+                todayHighlight: true,
+                viewMode: 'years',
+                minViewMode: 'years'
+            });
+        });
+    </script>
+
+</body>
+
+</html>
