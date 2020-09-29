@@ -377,6 +377,28 @@ label {
     cursor: not-allowed;
 }
 
+/* ALERT*/
+.alert-danger{
+    color: #fff;
+    background-color: #e74a3b;
+    border-color: #e74a3b;
+
+}
+
+.alert-danger a{
+    color: yellow;
+} 
+
+.alert-danger a:hover{
+    color: #f6c23e;
+} 
+
+.alert-success{
+    color: #fff;
+    background-color: #1cc88a;
+    border-color:#1cc88a;
+}
+
 @media (max-width: 444px) {
     .nav-tabs {
         display: -webkit-box;
